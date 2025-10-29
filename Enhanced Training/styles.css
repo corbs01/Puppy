@@ -180,65 +180,6 @@ main {
   color: var(--primary-dark);
 }
 
-.rich-text {
-  display: grid;
-  gap: 1.25rem;
-}
-
-.rich-text h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  color: var(--primary);
-}
-
-.rich-text p,
-.rich-text li {
-  color: var(--text);
-  font-size: 1rem;
-}
-
-.rich-text ul,
-.rich-text ol {
-  padding-left: 1.25rem;
-  display: grid;
-  gap: 0.75rem;
-}
-
-.rich-text li::marker {
-  color: var(--accent);
-}
-
-.source {
-  display: inline-block;
-  margin-left: 0.35rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 999px;
-  background: rgba(42, 157, 143, 0.1);
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-details.reference {
-  border: 1px solid rgba(42, 157, 143, 0.25);
-  border-radius: var(--radius-md);
-  background: rgba(42, 157, 143, 0.08);
-  padding: 1.25rem 1.5rem;
-}
-
-details.reference summary {
-  cursor: pointer;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  outline: none;
-}
-
-details.reference[open] summary {
-  color: var(--accent);
-}
-
 .milestones {
   display: grid;
   gap: 1.5rem;
@@ -279,10 +220,6 @@ details.reference[open] summary {
 .experience h3,
 .timeline__badge {
   color: var(--accent);
-}
-
-.callout h3 {
-  font-family: 'Playfair Display', serif;
 }
 
 .training-timeline {
