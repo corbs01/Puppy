@@ -1,4 +1,3 @@
-const page = document.querySelector('.page');
 const tabButtons = Array.from(document.querySelectorAll('.tabs__button'));
 const tabPanels = Array.from(document.querySelectorAll('.tabs__panel'));
 const scrollButtons = document.querySelectorAll('[data-scroll-to]');
@@ -177,22 +176,4 @@ if (checklistForm) {
   });
 }
 
-// Decorative background interaction
-if (page) {
-  document.addEventListener('mousemove', (event) => {
-    const x = (event.clientX / window.innerWidth - 0.5) * 6;
-    const y = (event.clientY / window.innerHeight - 0.5) * 6;
-    page.style.transform = `perspective(1200px) rotateX(${y}deg) rotateY(${x}deg)`;
-  });
-
-  document.addEventListener('mouseleave', () => {
-    page.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg)';
-  });
-}
-
-// Ensure page reset on unload to avoid extreme transforms
-window.addEventListener('beforeunload', () => {
-  if (page) {
-    page.style.transform = '';
-  }
-});
+// Decorative background interaction removed per user preference for a stable page layout.
